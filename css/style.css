@@ -169,6 +169,12 @@ body {
 .footer .info .copyright .yellow {
     color: var(--yellow-text-color);
 }
+.footer .links li a {
+    transition: var(--main-transition);
+}
+.footer .links li a:hover {
+    padding-left: 10px;
+}
 .footer .contact-us ul svg {
     height: 20px;
     width: 20px;
