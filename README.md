@@ -1,2 +1,2 @@
 # bodni
-this is  project with  HTML , CSS  And Bootstrap
+This is  project with  HTML , CSS  And Bootstrap
