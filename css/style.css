@@ -1,0 +1,193 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-text-color: #ffc501;
+    --main-transition: 0.5s;
+    --section-color: #eff7fa;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-text-color);
+    border: none;
+    transition: var(--main-transition);
+}
+.main-btn:hover {
+    background-color: #0b5ed7;
+    color: white;
+}
+.navbar {
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+    text-transform: capitalize;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search svg {
+    color: var(--green-color);
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+}
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+.main-title::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 150px;
+    height: 1px;
+    background-color: var(--green-color);
+}
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translatex(-50%);
+}
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+.features .feet h4 {
+    color: var(--yellow-text-color)
+}
+.Portfolio {
+    background-color: var(--section-color);
+}
+.Portfolio .shuffel p {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.Portfolio .shuffel .active {
+    background-color: var(--red-color);
+    color: var(--yellow-text-color);
+}
+.Portfolio .shuffel p:not(.active):hover {
+    color: var(--red-color);
+}
+.Portfolio .box {
+    padding: 5px;
+}
+.Portfolio .box::before {
+    content: attr(data-work);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    position: absolute;
+    background-color: #33d1cca6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    transition: var(--main-transition);
+    transform: translatey(calc(100% + 10px));
+    transform-origin: bottom right;
+}
+.Portfolio .box:hover::before {
+    transform: translateX(0);
+}
+.meet-team {
+    background-color: var(--section-color);
+}
+.meet-team .title h2 {
+    color: var(--yellow-text-color)
+}
+.meet-team .box h4 {
+    background-color: var(--green-color);
+}
+.meet-team .box:hover {
+    transition: var(--main-transition);
+    transform: translateY(-10px);
+}
+.project {
+    background-color: var(--dark-color);
+}
+.contact form input[type="email"] {
+    background-color: #ff3150;
+    width: 500px
+}
+.Subscribe {
+    background-color: var(--yellow-text-color);
+}
+.Subscribe input[type="email"] {
+    border: none;
+    border-bottom: 2px solid white;
+}
+.Subscribe input[type="email"]:focus {
+    outline: none;
+}
+.Subscribe input[type="email"]::placeholder {
+    color: white;
+    transition: var(--main-transition);
+    opacity: 1;
+}
+.Subscribe input[type="email"]:focus::placeholder {
+    opacity: 0;
+}
+.Subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-text-color);
+    transition: var(--main-transition);
+    padding: 0.5rem 2rem;
+}
+.Subscribe input[type="submit"]:hover {
+    background-color: #0b5ed7;
+    color: white;
+}
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .info .copyright p > span {
+    color: var(--green-color);
+}
+.footer .info .copyright .yellow {
+    color: var(--yellow-text-color);
+}
+.footer .contact-us ul svg {
+    height: 20px;
+    width: 20px;
+}
+.footer .contact-us .social .Facebook {
+    background-color: #1877f2;
+}
+.footer .contact-us .social .twitter {
+    background-color: #1da1f2;
+}
+.footer .contact-us .social .google {
+    background-color: #dd4b39;
+}
+.footer .contact-us .social .git {
+    background-color: #bd2c00;
+}
+.footer .made {
+    border-top: 1px solid #ccc;
+}
+.footer .made a {
+    color: var(--yellow-text-color);
+}
